@@ -1,4 +1,37 @@
-name: Gravity Changer
+name: GravityChanger
 version: '1.0-SNAPSHOT'
 main: me.plexi09.gravityChanger.GravityChanger
+description: A Paper plugin used to mainuplate gravity. Built for MerionMC.
+authors: [Plexi09, MerionMC]
+website: https://plexi09.me
 api-version: '1.19'
+load: POSTWORLD
+prefix: '&8[&bGravityChanger&8] &7'
+depend:
+  - ProtocolLib
+  - Multiverse-Core
+softdepend:
+  - PlaceholderAPI
+
+commands:
+  gravity:
+    description: Change the gravity in the current world.
+    usage: /gravity <gravity>
+    permission: gravitychanger.use
+    aliases: [grav, gravchange]
+  gravitylist:
+    description: Lists all the available gravity options.
+    usage: /gravitylist
+    permission: gravitychanger.use
+    aliases: [gravlist, gravoptions]
+
+permissions:
+    gravitychanger.affected:
+        description: Makes the player affected by the change in gravity.
+        default: op
+    gravitychanger.bypass:
+        description: Allows the player to bypass the gravity change.
+        default: op
+    gravitychanger.use:
+        description: Allows the player to use the gravity change command.
+        default: op
