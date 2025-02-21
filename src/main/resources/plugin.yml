@@ -1,0 +1,4 @@
+name: Gravity Changer
+version: '1.0-SNAPSHOT'
+main: me.plexi09.gravityChanger.GravityChanger
+api-version: '1.19'
