@@ -1,0 +1,10 @@
+planets:
+  world:
+    gravity: 1.0
+    hasAtmosphere: true
+  mars:
+    gravity: 0.38
+    hasAtmosphere: false
+  moon:
+    gravity: 0.16
+    hasAtmosphere: false
