@@ -31,9 +31,7 @@ public class GravityListener implements Listener {
         double altitude = player.getLocation().getY();
         double gravityFactor = GravityCalculation.calculateGravity(baseGravity, altitude);
 
-        // Apply vertical velocity manipulation (for demonstration only)
-        // This is a simplistic approach; actual gravity manipulation in Minecraft
-        // can be more complex and may require repeated tasks or other event hooks.
+        // Apply vertical velocity manipulation
         if (player.getVelocity().getY() < 0) {
             player.setVelocity(player.getVelocity().multiply(gravityFactor));
         }

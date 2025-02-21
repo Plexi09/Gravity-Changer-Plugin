@@ -1,3 +1,5 @@
+# The gravity of the planets is relative to Minecraft's base gravity.
+
 planets:
   world:
     gravity: 1.0
@@ -8,3 +10,5 @@ planets:
   moon:
     gravity: 0.16
     hasAtmosphere: false
+
+version: 1.0 # Do not touch this !
